@@ -6,8 +6,7 @@ export default function NoteFooter ({date}){
     useOutsideAlerter(settings);
 
     const setSettings = ()=>{
-        console.log(settings)
-        settings.current.style.transform = settings.current.style.transform == "scale(1)" ?  "scale(0)" :"scale(1)";
+        settings.current.style.transform = settings.current.style.transform === "scale(1)" ?  "scale(0)" :"scale(1)";
     }
 
     function useOutsideAlerter(ref) {
