@@ -1,5 +1,5 @@
 import {useDispatch} from "react-redux";
-import {setTitle,setText} from "../../stores/temp";
+import {setTitle,setText} from "../../stores/newTemp";
 
 export default function Inputs ( ){
     const dispatch = useDispatch();

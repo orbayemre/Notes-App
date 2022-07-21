@@ -1,5 +1,5 @@
 import {useDispatch} from "react-redux";
-import {setDate,setId} from "../../stores/temp";
+import {setDate,setId} from "../../stores/newTemp";
 import { nanoid } from 'nanoid'
 
 export default function New(){

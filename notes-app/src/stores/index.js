@@ -1,10 +1,12 @@
 import { configureStore } from '@reduxjs/toolkit';
 import notesReducer from './notes';
-import tempReducer from './temp';
+import newTempReducer from './newTemp';
+import searchNotesReducer from './searchNotes';
 
 export default configureStore({
     reducer: {
         notesStore : notesReducer,
-        tempStore : tempReducer
+        newTempStore : newTempReducer,
+        searchNotesStore : searchNotesReducer,
     },
 })

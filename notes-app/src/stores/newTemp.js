@@ -34,14 +34,13 @@ export const temp = createSlice({
         setIsFavorite: (state,action) => {
             state.isFavorite = action.payload;
         },
-        setAllNull : (state =>{
+        setAllNull : state =>{
             state.title = "";
             state.text = "";
             state.date = "";
             state.color = "";
             state.font = "";
-            state.isFavorite = false
-        })
+        }
     }
 })
 

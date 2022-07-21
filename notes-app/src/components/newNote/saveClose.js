@@ -1,9 +1,9 @@
 import { useSelector,useDispatch } from "react-redux";
 import {addNote} from "../../stores/notes";
-import {setAllNull} from "../../stores/temp";
+import {setAllNull} from "../../stores/newTemp";
 export default function SaveClose() {
     
-    const {id,title,text,date,color,font,isFavorite} = useSelector(state => state.tempStore);
+    const {id,title,text,date,color,font,isFavorite} = useSelector(state => state.newTempStore);
     const {notes} = useSelector(state => state.notesStore);
     const dispatch = useDispatch();
 

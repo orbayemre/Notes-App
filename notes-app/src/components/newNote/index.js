@@ -5,7 +5,7 @@ import SaveClose from "./saveClose"
 
 import { useRef,useEffect } from "react"
 import {useDispatch } from "react-redux";
-import {setAllNull} from "../../stores/temp";
+import {setAllNull} from "../../stores/newTemp";
 
 export default function NewNote(){
     const close = useRef();

@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react"
 import {useDispatch} from "react-redux";
-import {setColor} from "../../stores/temp";
+import {setColor} from "../../stores/newTemp";
 
 export default function Colors() {
 

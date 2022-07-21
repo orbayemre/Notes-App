@@ -1,5 +1,5 @@
 import {useDispatch} from "react-redux";
-import {setDate,setId,setColor,setFont} from "../../stores/temp";
+import {setDate,setId,setColor,setFont} from "../../stores/newTemp";
 import { nanoid } from 'nanoid'
 
 export default function AddNote(){
