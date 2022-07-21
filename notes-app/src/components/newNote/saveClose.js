@@ -4,6 +4,7 @@ import {setAllNull} from "../../stores/temp";
 export default function SaveClose() {
     
     const {id,title,text,date,color,font,isFavorite} = useSelector(state => state.tempStore);
+    const {notes} = useSelector(state => state.notesStore);
     const dispatch = useDispatch();
 
     const closeComp = () =>{
@@ -15,6 +16,7 @@ export default function SaveClose() {
     }
     const saveStore = () => {
         dispatch(addNote({id,title,text,date,color,font,isFavorite}));
+        localStorage.setItem("notes",JSON.stringify([...notes,{id,title,text,date,color,font,isFavorite}]))
         dispatch(setAllNull());
         document.getElementById("title").value="";
         document.getElementById("text").value="";

@@ -11,7 +11,7 @@ export default function Note({note}){
             <p className="px-3 pt-1 overflow-hidden">
                 {note.text}
             </p>
-            <NoteFooter date = {note.date}/>
+            <NoteFooter date = {note.date} id = {note.id}/>
 
         </div>
     )

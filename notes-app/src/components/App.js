@@ -2,7 +2,7 @@ import {Provider} from "react-redux";
 import store from "../stores";
 import NavBar from "./navBar";
 import Notes from "./notesList";
-import NewNote from "./newUpdNote";
+import NewNote from "./newNote";
 import "../css/index.css";
 
 export default function App() {
