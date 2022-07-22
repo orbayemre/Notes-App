@@ -1,7 +1,8 @@
 import { useRef,useEffect } from "react";
 import { useSelector,useDispatch } from "react-redux";
 import { removeNote } from "../../stores/notes";
-
+import { setId,setAll } from "../../stores/updTemp";
+import {showUpd} from "../../stores/showNewUpd";
 export default function NoteFooter ({date,id}){
 
     const settings = useRef();
@@ -26,19 +27,28 @@ export default function NoteFooter ({date,id}){
           };
         }, [ref]);
       }
-      
+      const showUpdComp = () =>{
+
+        settings.current.style.transform = "scale(0)";
+        dispatch(showUpd());
+        dispatch(setId(id));
+        dispatch(setAll(notes.filter(note => note.id === id)[0]))
+
+
+      }
     return(
         <div className="flex justify-between items-center w-5/6 ml-3 pt-1 box-border border-t border-den absolute bottom-2 text-xs">
                 <span>{date}</span>
                 <svg onClick={setSettings} xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 p-1 box-content rounded-full hover:bg-red-400 duration-100 cursor-pointer" viewBox="0 0 20 20" fill="currentColor">
                     <path d="M10 6a2 2 0 110-4 2 2 0 010 4zM10 12a2 2 0 110-4 2 2 0 010 4zM10 18a2 2 0 110-4 2 2 0 010 4z" />
                 </svg>
-                <div  ref={settings}  className="scale-0 flex flex-col justify-center items-center w-20 h-14 duration-200 box-content bg-light rounded shadow shadow-gray-400 absolute z-10 bottom-6 -right-16 font-Signika">
-                    <div className="w-full h-1/2 flex cursor-pointer duration-100 px-3 pt-2 rounded-t hover:bg-add"> 
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1}>
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
-                    </svg>
-                    <span className="pl-2">Edit</span>
+                <div   ref={settings}  className="scale-0 flex flex-col justify-center items-center w-20 h-14 duration-200 box-content bg-light rounded shadow shadow-gray-400 absolute z-10 bottom-6 -right-16 font-Signika">
+
+                    <div onClick={showUpdComp} className="w-full h-1/2 flex cursor-pointer duration-100 px-3 pt-2 rounded-t hover:bg-add">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1}>
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+                        </svg>
+                        <span className="pl-2">Edit</span>
                     </div>
 
                     <div onClick={()=> dispatch(removeNote({notes,id}))} className="w-full h-1/2 flex cursor-pointer duration-100 px-3 pt-1 rounded-b hover:bg-add">

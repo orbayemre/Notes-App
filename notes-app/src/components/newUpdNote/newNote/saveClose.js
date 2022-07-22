@@ -1,6 +1,8 @@
 import { useSelector,useDispatch } from "react-redux";
-import {addNote} from "../../stores/notes";
-import {setAllNull} from "../../stores/newTemp";
+import {addNote} from "../../../stores/notes";
+import {setAllNull} from "../../../stores/newTemp";
+import {hideNew} from "../../../stores/showNewUpd";
+
 export default function SaveClose() {
     
     const {id,title,text,date,color,font,isFavorite} = useSelector(state => state.newTempStore);
@@ -8,20 +10,18 @@ export default function SaveClose() {
     const dispatch = useDispatch();
 
     const closeComp = () =>{
-        const newComp =document.getElementById("newComp");
-        newComp.style.transform = "scale(0)";
+        dispatch(hideNew());
         dispatch(setAllNull());
-        document.getElementById("title").value="";
-        document.getElementById("text").value="";
+        document.getElementById("newTitle").value="";
+        document.getElementById("newText").value="";
     }
     const saveStore = () => {
         dispatch(addNote({id,title,text,date,color,font,isFavorite}));
         localStorage.setItem("notes",JSON.stringify([...notes,{id,title,text,date,color,font,isFavorite}]))
         dispatch(setAllNull());
-        document.getElementById("title").value="";
-        document.getElementById("text").value="";
-        const newComp =document.getElementById("newComp");
-        newComp.style.transform = "scale(0)";
+        document.getElementById("newTitle").value="";
+        document.getElementById("newText").value="";
+        dispatch(hideNew());
         
     }
     return(

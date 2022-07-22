@@ -1,10 +1,10 @@
 import { useEffect, useRef, useState } from "react"
-import {useDispatch} from "react-redux";
-import {setColor} from "../../stores/newTemp";
-
+import {useDispatch, useSelector} from "react-redux";
+import {setColor} from "../../../stores/updTemp";
 export default function Colors() {
 
-    const [color,setColour] = useState("red");
+    const {color} = useSelector(state => state.updTempStore)
+    const [colour,setColour] = useState(color);
     const parent = useRef();
     const dispatch = useDispatch();
 
@@ -13,8 +13,8 @@ export default function Colors() {
         for (var i = 0; i < doc.childNodes.length; i++) {
             doc.childNodes[i].children[0].style.opacity = "0";
         }
-        document.getElementById(color).children[0].style.opacity = "1";
-        dispatch(setColor(color));
+        document.getElementById(colour).children[0].style.opacity = "1";
+        dispatch(setColor(colour));
     });
 
     return(

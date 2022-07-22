@@ -1,6 +1,6 @@
 import { useRef } from "react";
 import {useDispatch} from "react-redux";
-import {setFont,setIsFavorite} from "../../stores/newTemp";
+import {setFont,setIsFavorite} from "../../../stores/newTemp";
 
 export default function FontFav () {
     const dispatch = useDispatch();

@@ -2,8 +2,8 @@ import {Provider} from "react-redux";
 import store from "../stores";
 import NavBar from "./navBar";
 import Notes from "./notesList";
-import NewNote from "./newNote";
 import "../css/index.css";
+import NewUpdNote from "./newUpdNote";
 
 export default function App() {
   return (
@@ -11,7 +11,7 @@ export default function App() {
       <div className="w-full">
         <NavBar/>
         <Notes/>
-        <NewNote/>
+        <NewUpdNote/>
       </div>
     </Provider>
   );

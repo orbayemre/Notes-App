@@ -15,17 +15,17 @@ export const temp = createSlice({
         setId : (state,action) =>{
             state.id = action.payload
         },
-        setTitle: (state,action) => {	
+        setTitle: (state,action) => {
             state.title = action.payload;
         },
         setText: (state,action) => {
             state.text = action.payload;
         },
         setDate: (state) => {
-            const now = new Date();	
+            const now = new Date();
             state.date = now.toLocaleDateString();
         },
-        setColor: (state,action) => {	
+        setColor: (state,action) => {
             state.color = action.payload;
         },
         setFont: (state,action) => {
@@ -34,13 +34,24 @@ export const temp = createSlice({
         setIsFavorite: (state,action) => {
             state.isFavorite = action.payload;
         },
+        setAll : (state,action) =>{
+            state.title = action.payload.title;
+            state.text = action.payload.text;
+            state.date = action.payload.date;
+            state.color = action.payload.color;
+            state.font = action.payload.font;
+            state.isFavorite = action.payload.isFavorite;
+        },
         setAllNull : state =>{
             state.title = "";
             state.text = "";
+            state.date = "";
+            state.color = "";
+            state.font = "";
         }
     }
 })
 
-export const {setId,setTitle,setText,setDate,setColor,setIsFavorite,setFont,setAllNull} = temp.actions;
+export const {setId,setTitle,setText,setDate,setColor,setIsFavorite,setFont,setAllNull,setAll} = temp.actions;
 
 export default temp.reducer;

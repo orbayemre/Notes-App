@@ -4,7 +4,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dfe4cdd4-fc3d-4ad1-8671-4022b57a4cb7" name="Changes" comment="" />
+    <list default="true" id="dfe4cdd4-fc3d-4ad1-8671-4022b57a4cb7" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/notes-app/src/components/newUpdNote/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notes-app/src/components/newUpdNote/updateNote/colors.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notes-app/src/components/newUpdNote/updateNote/fontAndFav.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notes-app/src/components/newUpdNote/updateNote/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notes-app/src/components/newUpdNote/updateNote/inputs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notes-app/src/components/newUpdNote/updateNote/saveClose.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notes-app/src/stores/showNewUpd.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notes-app/src/stores/updTemp.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes-app/src/components/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/notes-app/src/components/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes-app/src/components/navBar/new.js" beforeDir="false" afterPath="$PROJECT_DIR$/notes-app/src/components/navBar/new.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes-app/src/components/newNote/colors.js" beforeDir="false" afterPath="$PROJECT_DIR$/notes-app/src/components/newUpdNote/newNote/colors.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes-app/src/components/newNote/fontAndFav.js" beforeDir="false" afterPath="$PROJECT_DIR$/notes-app/src/components/newUpdNote/newNote/fontAndFav.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes-app/src/components/newNote/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/notes-app/src/components/newUpdNote/newNote/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes-app/src/components/newNote/inputs.js" beforeDir="false" afterPath="$PROJECT_DIR$/notes-app/src/components/newUpdNote/newNote/inputs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes-app/src/components/newNote/saveClose.js" beforeDir="false" afterPath="$PROJECT_DIR$/notes-app/src/components/newUpdNote/newNote/saveClose.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes-app/src/components/notesList/addNote.js" beforeDir="false" afterPath="$PROJECT_DIR$/notes-app/src/components/notesList/addNote.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes-app/src/components/notesList/noteFooter.js" beforeDir="false" afterPath="$PROJECT_DIR$/notes-app/src/components/notesList/noteFooter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes-app/src/stores/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/notes-app/src/stores/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes-app/src/stores/newTemp.js" beforeDir="false" afterPath="$PROJECT_DIR$/notes-app/src/stores/newTemp.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes-app/src/stores/notes.js" beforeDir="false" afterPath="$PROJECT_DIR$/notes-app/src/stores/notes.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,6 +35,13 @@
   <component name="ComposerSettings">
     <execution />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -20,6 +49,9 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2CFwL2ktyQXCwlFGCuw5Yv6Gjsz" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -29,15 +61,24 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "E:/Dosyalarim/Web Projelerim/Notes-App-with-React",
+    "last_opened_file_path": "E:/Dosyalarim/Web Projelerim/Notes-App-with-React/notes-app/src/components/updateNote",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Dosyalarim\Web Projelerim\Notes-App-with-React\notes-app\src\components\updateNote" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Dosyalarim\Web Projelerim\Notes-App-with-React\notes-app\src\components\newUpdNote" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -47,10 +88,29 @@
       <option name="presentableId" value="Default" />
       <updated>1658411580711</updated>
       <workItem from="1658411583735" duration="334000" />
+      <workItem from="1658473332664" duration="1329000" />
+      <workItem from="1658474680430" duration="12694000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="false" />
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

@@ -5,7 +5,8 @@ import SaveClose from "./saveClose"
 
 import { useRef,useEffect } from "react"
 import {useDispatch } from "react-redux";
-import {setAllNull} from "../../stores/newTemp";
+import {setAllNull} from "../../../stores/newTemp";
+import {hideNew} from "../../../stores/showNewUpd";
 
 export default function NewNote(){
     const close = useRef();
@@ -16,10 +17,10 @@ export default function NewNote(){
         useEffect(() => {
           function handleClickOutside(event) {
             if (ref.current && !ref.current.contains(event.target)) {
-                close.current.style.transform = "scale(0)";
+                dispatch(hideNew());
                 dispatch(setAllNull());
-                document.getElementById("title").value="";
-                document.getElementById("text").value="";
+                document.getElementById("newTitle").value="";
+                document.getElementById("newText").value="";
             }
           }
           document.addEventListener("mousedown", handleClickOutside);
@@ -30,13 +31,13 @@ export default function NewNote(){
       }
     return(
         <>
-            <div ref={close} id="newComp" className="scale-0 z-30 w-2/5 h-96 bg-light shadow-type2  rounded fixed top-1/4 left-1/3">
+            <div ref={close} id="newComp" className="z-30 w-2/5 h-96 bg-light shadow-type2  rounded fixed top-1/4 left-1/3">
                 <Inputs/>
                 <Colors/>
                 <FontFav/>
                 <SaveClose/>
             </div>
-            
+
             <div id="blur" className="z-20 w-full h-full hidden backdrop-blur-sm top-0 left-0"></div>
         </>
     )
