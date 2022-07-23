@@ -1,3 +1,47 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.redNote{
+    background-color: #EB5353;
+}
+.hoverred:hover{
+    background-color: rgba(235, 83, 83, 0.8);
+}
+.hovergreen:hover{
+    background-color: rgba(20, 195, 142, 0.8);
+}
+.greenNote{
+    background-color:#14C38E;
+}
+.blueNote{
+    background-color: #3AB4F2;
+}
+.yellowNote{
+    background-color:#F4E06D;
+}
+.pinkNote{
+    background-color:#FF869E;
+}
+/*
+font-family: 'Edu NSW ACT Foundation', cursive;
+font-family: 'Edu QLD Beginner', cursive;
+font-family: 'Mochiy Pop One', sans-serif;
+font-family: 'Signika', sans-serif;
+font-family: 'Titillium Web', sans-serif;
+*/
+.eduNsw{
+    font-family: 'Edu NSW ACT Foundation', cursive;
+}
+.cormorant{
+    font-family: 'Cormorant Garamond', serif;
+}
+.mochiy{
+    font-family: 'Mochiy Pop One', sans-serif;
+}
+.signika{
+    font-family: 'Signika', sans-serif;
+}
+.titillium{
+    font-family: 'Titillium Web', sans-serif;
+}

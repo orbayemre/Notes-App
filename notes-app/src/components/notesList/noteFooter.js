@@ -39,7 +39,7 @@ export default function NoteFooter ({date,id}){
     return(
         <div className="flex justify-between items-center w-5/6 ml-3 pt-1 box-border border-t border-den absolute bottom-2 text-xs">
                 <span>{date}</span>
-                <svg onClick={setSettings} xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 p-1 box-content rounded-full hover:bg-red-400 duration-100 cursor-pointer" viewBox="0 0 20 20" fill="currentColor">
+                <svg onClick={setSettings} xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 p-1 box-content rounded-full hover:text-black duration-100 cursor-pointer" viewBox="0 0 20 20" fill="currentColor">
                     <path d="M10 6a2 2 0 110-4 2 2 0 010 4zM10 12a2 2 0 110-4 2 2 0 010 4zM10 18a2 2 0 110-4 2 2 0 010 4z" />
                 </svg>
                 <div   ref={settings}  className="scale-0 flex flex-col justify-center items-center w-20 h-14 duration-200 box-content bg-light rounded shadow shadow-gray-400 absolute z-10 bottom-6 -right-16 font-Signika">

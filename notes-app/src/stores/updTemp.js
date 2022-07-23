@@ -8,7 +8,7 @@ export const temp = createSlice({
         text : "",
         date : "",
         color : "",
-        font :"font1",
+        font :"signika",
         isFavorite : false
     },
     reducers:{

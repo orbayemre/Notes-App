@@ -11,7 +11,7 @@ export default function AddNote(){
         dispatch(setDate());
         dispatch(setId(nanoid()));
         dispatch(setColor("red"));
-        dispatch(setFont("font1"));
+        dispatch(setFont("signika"));
 
     }
     return(
