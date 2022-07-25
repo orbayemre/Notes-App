@@ -20,8 +20,8 @@ export default function Colors() {
     return(
         <>
             <div ref={parent} className="flex flex-col justify-center items-center h-30 mt-6 absolute right-16 top-0 space-y-4">
-                    <span onClick={() => setColour("red")} id="red" className="bg-red-600 w-9 h-9 align-middle rounded-full  shadow-type1 flex justify-center items-center">
-                        <img className="opacity-0 duration-100 " src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg" alt="Checked Icon" />
+                    <span onClick={() => setColour("red")} id="red" className="bg-red-600 w-9 h-9 align-middle rounded-full shadow-type1 flex justify-center items-center">
+                        <img className="opacity-0 duration-100" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg" alt="Checked Icon" />
                     </span>
                     <span onClick={() => setColour("blue")} id="blue" className="bg-blue-600 w-9 h-9 align-middle rounded-full shadow-type1  flex justify-center items-center">
                         <img className="opacity-0 duration-100" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg" alt="Checked Icon" />
