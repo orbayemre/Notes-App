@@ -1,21 +1,54 @@
 import {useEffect, useState} from "react";
+import toast from "react-hot-toast";
 
 export default function DarkMode(){
     const [darkMode,setDarkMode] = useState(
-        localStorage.getItem("darkMode") ? (localStorage.getItem("darkMode") === "true" ? true:false) : false
+        localStorage.getItem("darkMode") ? (localStorage.getItem("darkMode") === "true") : false
     );
     const changeDarkMode = (e) =>{
         localStorage.setItem("darkMode",e.target.checked);
         setDarkMode(e.target.checked);
-        if(e.target.checked){document.body.class ="dark"}
-        else{document.body.class = "";}
+        if(e.target.checked){
+            document.body.class ="dark";
+            document.body.style.background = "#2C3333";
+            toast('Hello Darkness!',
+                {
+                    icon: '👏',
+                    style: {
+                        borderRadius: '10px',
+                        background: '#333',
+                        color: '#fff',
+                    },
+                }
+            );
+        }
+        else{
+            document.body.class = "";
+            document.body.style.background = "white";
+            toast('Welcome Back Light Mode!',
+                {
+                    icon: '👏',
+                    style: {
+                        borderRadius: '10px',
+                        background: 'white',
+                        color: '#2C3333',
+                    },
+                }
+            );
+        }
     }
     useEffect(()=>{
-        if(darkMode){document.body.classList.add("dark")}
-        else{document.body.classList.remove("dark");}
+        if(darkMode){
+            document.body.classList.add("dark");
+            document.body.style.background = "#2C3333";
+        }
+        else{
+            document.body.classList.remove("dark");
+            document.body.style.background = "white";
+        }
     })
     return(
-        <div className="btn-container absolute -right-40">
+        <div className="btn-container absolute xl:-right-20 lg:-right-28 md:-right-40">
             <i className="fa fa-sun-o" aria-hidden="true"></i>
             <label className="switch btn-color-mode-switch">
                 <input onClick={changeDarkMode} type="checkbox" name="color_mode" id="color_mode" value="1" defaultChecked={darkMode}/>

@@ -19,7 +19,7 @@ export default function FontFav () {
         favRef.current.checked = isFavorite;
     })
     return(
-        <div className="w-3/4 mr-5 flex justify-between items-center ">
+        <div className="w-10/12  flex justify-between items-center ">
             <select ref={fontRef} onChange={changeFont} className={"w-60 bg-light shadow-type1 rounded ml-5 p-1 outline-none " +
                 "dark:bg-lightDark dark:text-white dark:border-0 "+fontState} name="font" id="font">
                 <option className={"signika"} value="signika" defaultValue>Signika</option>

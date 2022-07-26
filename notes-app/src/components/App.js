@@ -8,7 +8,7 @@ import NewUpdNote from "./newUpdNote";
 export default function App() {
   return (
     <Provider store={store}>
-      <div className="w-full h-screen dark:bg-dark duration-200">
+      <div className="dark:bg-dark duration-200 h-full">
         <NavBar/>
         <Notes/>
         <NewUpdNote/>

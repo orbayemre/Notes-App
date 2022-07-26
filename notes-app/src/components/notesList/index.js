@@ -11,7 +11,7 @@ export default function Notes(){
     notes.filter(note => note.title.slice(0,searchNotes.length) === searchNotes && note.isFavorite === true) ;
     return(
         <div className="flex justify-center items-center">
-            <div className="flex flex-wrap justify-start items-center w-3/4 m-auto px-4">
+            <div className="flex flex-wrap justify-start items-center w-full xl:w-3/4 md:w-full xl:m-auto xl:px-4 lg:pl-32 md:pl-10 phone:pl-5 phone:w-full miniPhone:px-5">
                 {listNotes.map((note)=><Note note={note} key={note.id} />)}
                 <AddNote/>
             </div>

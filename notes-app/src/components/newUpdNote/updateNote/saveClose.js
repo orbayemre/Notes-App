@@ -3,6 +3,7 @@ import {hideUpd} from "../../../stores/showNewUpd";
 import {setAllNull} from "../../../stores/newTemp";
 import {setDate} from "../../../stores/updTemp";
 import {updateNote} from "../../../stores/notes";
+import toast from "react-hot-toast";
 
 export default function SaveClose() {
     const dispatch = useDispatch();
@@ -14,12 +15,15 @@ export default function SaveClose() {
         dispatch(setAllNull());
         document.getElementById("updTitle").value="";
         document.getElementById("updText").value="";
+        toast.error("Your note could not update.")
     }
     const saveStore = () => {
         dispatch(setDate());
         const updNote={id,title,text,date,color,font,isFavorite};
         dispatch(updateNote({notes,updNote}));
         dispatch(hideUpd());
+
+        toast.success('Your note updated!');
     }
     return(
         <div className="flex justify-center items-center">

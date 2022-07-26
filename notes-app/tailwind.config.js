@@ -26,7 +26,12 @@ module.exports = {
         type4:"#40DFEF 0px 3px 8px;",
         type5:"#393E46 0px 10px 36px 0px, rgba(0, 0, 0, 0.04) 0px 0px 0px 1px;",
       },
+      screens:{
+        phone: {'max': '768px'},
+        miniPhone: {'max': '600px'},
+      }
     },
+
   },
   plugins: [],
 }

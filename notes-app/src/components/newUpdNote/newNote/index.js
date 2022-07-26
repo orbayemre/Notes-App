@@ -31,15 +31,13 @@ export default function NewNote(){
       }
     return(
         <>
-            <div ref={close} id="newComp" className="z-30 w-2/5 h-96 bg-light shadow-type2  rounded fixed top-1/4 left-1/3
+            <div ref={close} id="newComp" className="z-30 w-2/5 xl:w-2/5 xl:left-1/3 lg:w-2/4 lg:left-60 md:w-4/5 md:left-20 phone:w-full h-96 bg-light shadow-type2  rounded fixed top-1/4
             dark:bg-dark dark:shadow-type5">
                 <Inputs/>
                 <Colors/>
                 <FontFav/>
                 <SaveClose/>
             </div>
-
-            <div id="blur" className="z-20 w-full h-full hidden backdrop-blur-sm top-0 left-0"></div>
         </>
     )
 }

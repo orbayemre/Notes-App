@@ -2,6 +2,7 @@ import { useSelector,useDispatch } from "react-redux";
 import {addNote} from "../../../stores/notes";
 import {setAllNull} from "../../../stores/newTemp";
 import {hideNew} from "../../../stores/showNewUpd";
+import toast from 'react-hot-toast';
 
 export default function SaveClose() {
     
@@ -14,6 +15,8 @@ export default function SaveClose() {
         dispatch(setAllNull());
         document.getElementById("newTitle").value="";
         document.getElementById("newText").value="";
+        toast.error("Your note could not save.")
+
     }
     const saveStore = () => {
         dispatch(addNote({id,title,text,date,color,font,isFavorite}));
@@ -22,7 +25,7 @@ export default function SaveClose() {
         document.getElementById("newTitle").value="";
         document.getElementById("newText").value="";
         dispatch(hideNew());
-        
+        toast.success('Your note saved!');
     }
     return(
         <div className="flex justify-center items-center">
@@ -38,6 +41,7 @@ export default function SaveClose() {
         dark:text-dark dark:hover:bg-dark dark:hover:text-red-500 duration-200">
             <span>Cancel</span>
         </button>
+
         </div>
     )
 };
