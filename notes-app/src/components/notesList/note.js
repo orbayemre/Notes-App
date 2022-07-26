@@ -2,15 +2,17 @@ import NoteFooter from "./noteFooter"
 
 export default function Note({note}){
     return(
-        <div id={note.id} className={"inline-block w-1/5 h-60 mx-5 my-3 rounded-b-xl  text-dark relative shadow-type3 "
+        <div id={note.id} className={"inline-block w-1/4 h-60 mx-5 my-3 rounded-b-xl  text-dark relative shadow-type3 "
             +note.color+"Note "
             +note.font}>
-            <h1 className="font-semibold text-2xl ml-3 py-2 overflow-hidden">
+            <h1 className={"font-semibold text-2xl ml-3 py-2 overflow-hidden "
+                + (note.font === "mochiy" ? "text-lg":"")}>
             {note.title}
             </h1>
-            <p className="px-3 pt-1 overflow-hidden">
-                {note.text}
-            </p>
+            <div className={"px-3 pt-1 h-3/5 overflow-auto noteScroll "
+                + (note.font === "mochiy" ? "text-sm":"")}>
+                <p>{note.text}</p>
+            </div>
             <NoteFooter date = {note.date} id = {note.id}/>
 
         </div>

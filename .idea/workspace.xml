@@ -4,28 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dfe4cdd4-fc3d-4ad1-8671-4022b57a4cb7" name="Changes" comment="color and font customing update">
-      <change afterPath="$PROJECT_DIR$/notes-app/src/components/navBar/darkMode.js" afterDir="false" />
+    <list default="true" id="dfe4cdd4-fc3d-4ad1-8671-4022b57a4cb7" name="Changes" comment="dark mode">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notes-app/src/components/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/notes-app/src/components/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notes-app/src/components/navBar/favorites.js" beforeDir="false" afterPath="$PROJECT_DIR$/notes-app/src/components/navBar/favorites.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notes-app/src/components/navBar/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/notes-app/src/components/navBar/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notes-app/src/components/navBar/new.js" beforeDir="false" afterPath="$PROJECT_DIR$/notes-app/src/components/navBar/new.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notes-app/src/components/navBar/search.js" beforeDir="false" afterPath="$PROJECT_DIR$/notes-app/src/components/navBar/search.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notes-app/src/components/newUpdNote/newNote/colors.js" beforeDir="false" afterPath="$PROJECT_DIR$/notes-app/src/components/newUpdNote/newNote/colors.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notes-app/src/components/newUpdNote/newNote/fontAndFav.js" beforeDir="false" afterPath="$PROJECT_DIR$/notes-app/src/components/newUpdNote/newNote/fontAndFav.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notes-app/src/components/newUpdNote/newNote/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/notes-app/src/components/newUpdNote/newNote/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notes-app/src/components/newUpdNote/newNote/inputs.js" beforeDir="false" afterPath="$PROJECT_DIR$/notes-app/src/components/newUpdNote/newNote/inputs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notes-app/src/components/newUpdNote/newNote/saveClose.js" beforeDir="false" afterPath="$PROJECT_DIR$/notes-app/src/components/newUpdNote/newNote/saveClose.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notes-app/src/components/newUpdNote/updateNote/fontAndFav.js" beforeDir="false" afterPath="$PROJECT_DIR$/notes-app/src/components/newUpdNote/updateNote/fontAndFav.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notes-app/src/components/newUpdNote/updateNote/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/notes-app/src/components/newUpdNote/updateNote/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notes-app/src/components/newUpdNote/updateNote/inputs.js" beforeDir="false" afterPath="$PROJECT_DIR$/notes-app/src/components/newUpdNote/updateNote/inputs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notes-app/src/components/newUpdNote/updateNote/saveClose.js" beforeDir="false" afterPath="$PROJECT_DIR$/notes-app/src/components/newUpdNote/updateNote/saveClose.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notes-app/src/components/notesList/addNote.js" beforeDir="false" afterPath="$PROJECT_DIR$/notes-app/src/components/notesList/addNote.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/notes-app/src/components/notesList/note.js" beforeDir="false" afterPath="$PROJECT_DIR$/notes-app/src/components/notesList/note.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notes-app/src/components/notesList/noteFooter.js" beforeDir="false" afterPath="$PROJECT_DIR$/notes-app/src/components/notesList/noteFooter.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/notes-app/src/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/notes-app/src/css/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notes-app/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/notes-app/tailwind.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +29,9 @@
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2CFwL2ktyQXCwlFGCuw5Yv6Gjsz" />
   <component name="ProjectLevelVcsManager">
@@ -91,7 +76,8 @@
       <workItem from="1658473332664" duration="1329000" />
       <workItem from="1658474680430" duration="13047000" />
       <workItem from="1658574399757" duration="6749000" />
-      <workItem from="1658731553478" duration="16686000" />
+      <workItem from="1658731553478" duration="16930000" />
+      <workItem from="1658819706836" duration="2327000" />
     </task>
     <task id="LOCAL-00001" summary="editing">
       <created>1658502870829</created>
@@ -107,7 +93,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658584255435</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="dark mode">
+      <created>1658759631208</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1658759631208</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -133,6 +126,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="editing" />
     <MESSAGE value="color and font customing update" />
-    <option name="LAST_COMMIT_MESSAGE" value="color and font customing update" />
+    <MESSAGE value="dark mode" />
+    <option name="LAST_COMMIT_MESSAGE" value="dark mode" />
   </component>
 </project>

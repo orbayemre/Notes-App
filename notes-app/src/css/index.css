@@ -226,3 +226,25 @@ p.by a{
 .white-preview p.by a{
     color: #000;
 }
+
+
+/* ===== Scrollbar CSS ===== */
+.noteScroll {
+    scrollbar-width: thin;
+    scrollbar-color: #404040 #ffffff;
+}
+
+.noteScroll::-webkit-scrollbar {
+    width: 4px;
+    padding-left: 2px;
+    transition-duration: 0.2s;
+}
+
+.noteScroll::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0);
+}
+
+.noteScroll::-webkit-scrollbar-thumb {
+    background-color: #404040;
+    border-radius: 30px;
+}
