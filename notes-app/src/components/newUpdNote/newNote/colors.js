@@ -20,19 +20,19 @@ export default function Colors() {
     return(
         <>
             <div ref={parent} className="flex flex-col justify-center items-center h-30 mt-6 absolute right-10 top-0 space-y-4">
-                    <span onClick={() => setColour("red")} id="red" className="redNote w-9 h-9 align-middle rounded-full shadow-type1 flex justify-center items-center">
+                    <span onClick={() => setColour("red")} id="red" className="redNote w-9 h-9 align-middle rounded-full shadow flex justify-center items-center">
                         <img className="opacity-0 duration-100" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg" alt="Checked Icon" />
                     </span>
-                    <span onClick={() => setColour("blue")} id="blue" className="blueNote w-9 h-9 align-middle rounded-full shadow-type1  flex justify-center items-center">
+                    <span onClick={() => setColour("blue")} id="blue" className="blueNote w-9 h-9 align-middle rounded-full shadow  flex justify-center items-center">
                         <img className="opacity-0 duration-100" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg" alt="Checked Icon" />
                     </span>
-                    <span onClick={() => setColour("green")} id="green" className="greenNote w-9 h-9 align-middle rounded-full shadow-type1  flex justify-center items-center">
+                    <span onClick={() => setColour("green")} id="green" className="greenNote w-9 h-9 align-middle rounded-full shadow  flex justify-center items-center">
                         <img className="opacity-0 duration-100" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg" alt="Checked Icon" />
                     </span>
-                    <span onClick={() => setColour("yellow")} id="yellow" className="yellowNote w-9 h-9 align-middle rounded-full shadow-type1  flex justify-center items-center">
+                    <span onClick={() => setColour("yellow")} id="yellow" className="yellowNote w-9 h-9 align-middle rounded-full shadow  flex justify-center items-center">
                         <img className="opacity-0 duration-100" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg" alt="Checked Icon" />
                     </span>
-                    <span onClick={() => setColour("pink")} id="pink" className="pinkNote w-9 h-9 align-middle rounded-full shadow-type1  flex justify-center items-center">
+                    <span onClick={() => setColour("pink")} id="pink" className="pinkNote w-9 h-9 align-middle rounded-full shadow  flex justify-center items-center">
                         <img className="opacity-0 duration-100" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg" alt="Checked Icon" />
                     </span>
                

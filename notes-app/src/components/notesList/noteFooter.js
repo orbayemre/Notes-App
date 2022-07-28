@@ -44,7 +44,7 @@ export default function NoteFooter ({date,id}){
                 </svg>
                 <div   ref={settings}  className="scale-0 flex flex-col justify-center items-center w-20 h-14 duration-200 box-content bg-light
                 rounded shadow shadow-gray-400 absolute z-10 bottom-6 -right-16 font-Signika
-                dark:bg-dark dark:shadow-type5 dark:text-white">
+                dark:bg-dark dark:shadow-xl dark:shadow-white/5 dark:text-white">
 
                     <div onClick={showUpdComp} className="w-full h-1/2 flex cursor-pointer duration-100 px-3 pt-2 rounded-t hover:bg-lightDark">
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1}>

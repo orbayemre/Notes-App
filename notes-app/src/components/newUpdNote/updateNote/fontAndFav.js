@@ -20,13 +20,13 @@ export default function FontFav () {
     })
     return(
         <div className="w-10/12  flex justify-between items-center ">
-            <select ref={fontRef} onChange={changeFont} className={"w-60 bg-light shadow-type1 rounded ml-5 p-1 outline-none " +
+            <select ref={fontRef} onChange={changeFont} className={"w-60 bg-light shadow rounded ml-5 p-1 outline-none " +
                 "dark:bg-lightDark dark:text-white dark:border-0 "+fontState} name="font" id="font">
-                <option className={"signika"} value="signika" defaultValue>Signika</option>
-                <option className={"eduNsw"} value="eduNsw" >Edu NSW ACT Foundation</option>
-                <option className={"mochiy"} value="mochiy">Mochiy Pop One</option>
-                <option className={"titillium"} value="titillium">Titillium</option>
-                <option className={"cormorant"} value="cormorant">Cormorant Garamond</option>
+                <option className="signika" value="signika" defaultValue>Signika</option>
+                <option className="eduNsw" value="eduNsw" >Edu NSW ACT Foundation</option>
+                <option className="mochiy" value="mochiy">Mochiy Pop One</option>
+                <option className="titillium" value="titillium">Titillium</option>
+                <option className="cormorant" value="cormorant">Cormorant Garamond</option>
             </select>
             <label  className="text-sm font-Signika flex justify-center items-center space-x-2 rounded-3xl
             dark:text-white">

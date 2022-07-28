@@ -24,8 +24,8 @@ export default function Search(){
     return(
         <div className="w-1/2" >
             <input onChange={searching} className="inline-block bg-search w-full h-6 py-4 px-4 font-Signika outline-none rounded-r-lg
-            hover:shadow-type1 focus:shadow-type1 duration-200
-            dark:hover:shadow-type4 dark:focus:shadow-type4 dark:placeholder-dark" type="text" id="searchInput"/>
+            hover:shadow hover:shadow-search focus:shadow focus:shadow-search duration-200
+            dark:hover:shadow dark:hover:shadow-search dark:focus:shadow dark:focus:shadow-search dark:placeholder-dark" type="text" id="searchInput"/>
             <label htmlFor="searchInput" ></label>
         </div>
     )

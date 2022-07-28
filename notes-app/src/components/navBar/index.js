@@ -23,8 +23,8 @@ export default function NavBar(){
         <div className="flex relative justify-center items-center w-3/4 xl:m-auto lg:w-4/5 lg:mx-4  md:ml-0 md:space-x-5 phone:w-full space-x-10 py-8">
             <New/>
             <Search/>
-            <div id="menuToggle" className="phone:hidden phone:absolute phone:flex phone:justify-center phone:bg-add phone:dark:bg-lightDark phone:shadow-type1
-                phone:dark:shadow-type5 phone:w-48 phone:h-32 phone:rounded-b-xl phone:right-5 z-10">
+            <div id="menuToggle" className="phone:hidden phone:absolute phone:flex phone:justify-center phone:bg-add phone:dark:bg-lightDark phone:shadow
+                phone:dark:shadow-gray-600 phone:w-48 phone:h-32 phone:rounded-b-xl phone:right-5 z-10">
                 <Favorites/>
                 <DarkMode/>
             </div>

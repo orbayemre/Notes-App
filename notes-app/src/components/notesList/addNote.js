@@ -15,7 +15,7 @@ export default function AddNote(){
 
     }
     return(
-        <div onClick={showNewComp} className="flex justify-center items-center w-40 h-40 ml-40 mt-2 rounded-full cursor-pointer bg-light shadow-type2
+        <div onClick={showNewComp} className="flex justify-center items-center w-40 h-40 ml-40 mt-2 rounded-full cursor-pointer bg-light shadow
         dark:text-white dark:bg-dark dark:border dark:border-white miniPhone:mx-auto miniPhone:mb-10
         dark:hover:bg-white dark:hover:text-dark duration-200">
             <svg xmlns="http://www.w3.org/2000/svg" className="h-1/2 w-1/2" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={0.3}>

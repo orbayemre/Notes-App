@@ -31,8 +31,8 @@ export default function NewNote(){
       }
     return(
         <>
-            <div ref={close} id="newComp" className="z-30 w-2/5 xl:w-2/5 xl:left-1/3 lg:w-2/4 lg:left-60 md:w-4/5 md:left-20 phone:w-full h-96 bg-light shadow-type2  rounded fixed top-1/4
-            dark:bg-dark dark:shadow-type5">
+            <div ref={close} id="newComp" className="z-30 w-2/5 xl:w-2/5 xl:left-1/3 lg:w-2/4 lg:left-60 md:w-4/5 md:left-20 phone:w-full h-96 bg-light shadow rounded fixed top-1/4
+            dark:bg-dark dark:shadow-xl dark:shadow-white/5">
                 <Inputs/>
                 <Colors/>
                 <FontFav/>
