@@ -225,6 +225,26 @@ p.by a{
 
 
 /* ===== Scrollbar CSS ===== */
+body {
+    scrollbar-width: thin;
+    scrollbar-color: #404040 #ffffff;
+}
+
+body::-webkit-scrollbar {
+    width: 4px;
+    padding-left: 2px;
+    transition-duration: 0.2s;
+}
+
+body::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #9b9b9b;
+    border-radius: 30px;
+}
+
 .noteScroll {
     scrollbar-width: thin;
     scrollbar-color: #404040 #ffffff;

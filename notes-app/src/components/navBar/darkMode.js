@@ -48,7 +48,7 @@ export default function DarkMode(){
         }
     })
     return(
-        <div className="btn-container absolute xl:-right-20 lg:-right-28 md:-right-40">
+        <div className="btn-container absolute bottom-8 xl:-right-20 lg:-right-28 md:-right-40 phone:bottom-2 phone:items phone:z-10">
             <i className="fa fa-sun-o" aria-hidden="true"></i>
             <label className="switch btn-color-mode-switch">
                 <input onClick={changeDarkMode} type="checkbox" name="color_mode" id="color_mode" value="1" defaultChecked={darkMode}/>

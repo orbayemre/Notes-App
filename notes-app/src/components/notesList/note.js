@@ -2,7 +2,7 @@ import NoteFooter from "./noteFooter"
 
 export default function Note({note}){
     return(
-        <div id={note.id} className={"inline-block w-1/4 xl:w-1/4 lg:w-1/3 md:w-2/5 phone:w-2/5 miniPhone:w-full h-60 mx-5 my-3 rounded-b-xl  text-dark relative shadow-type3 "
+        <div id={note.id} className={"inline-block w-1/3 xl:left-20 xl:w-1/4 lg:w-1/3 md:w-2/5 phone:w-2/5 miniPhone:w-full h-60 mx-5 my-3 rounded-b-xl  text-dark relative shadow-type3 "
             +note.color+"Note "
             +note.font}>
             <h1 className={"font-semibold text-2xl ml-3 py-2 overflow-hidden "
