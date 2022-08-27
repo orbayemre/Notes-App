@@ -8,7 +8,6 @@ import { Squash as Hamburger } from 'hamburger-react';
 export default function NavBar(){
     const [isOpen, setOpen] = useState(false)
     useEffect(()=>{
-        console.log(isOpen);
         if(isOpen){
             document.getElementById("menuToggle").classList.remove("phone:hidden");
             document.getElementById("menuToggle").classList.add("phone:inline-block");
