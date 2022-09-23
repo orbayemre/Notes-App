@@ -1,3 +1,9 @@
 # Notes App with React
 ## [Demo](https://orbayemre-notesapp.netlify.app/)
-![project photo](/projectPhoto.png)
+## PC  
+![project photo](/images/projectPhoto.png)  
+## Phone
+![phone responsive](/images/phoneResponsive.png)
+![phone responsive 2](/images/phoneResponsive2.png)  
+
+
